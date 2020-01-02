@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Security;
 using System.ComponentModel;
 using System.Diagnostics;
@@ -27,18 +27,7 @@ namespace RunAsInteractive
             {
                 securePwd.AppendChar(c);
             }
-            /*do
-            {
-                key = Console.ReadKey(true);
-
-              
-                    // Append the character to the password.
-                    securePwd.AppendChar(key.KeyChar);
-                    Console.Write(key.KeyChar);
-                
-            } while (key.Key != ConsoleKey.Enter);
-            Console.WriteLine();*/
-
+            
             //Read exe to execute
             Console.Write("Enter full path of the file to run: ");
             exe = Console.ReadLine();
@@ -54,10 +43,6 @@ namespace RunAsInteractive
             domain = Console.ReadLine();
             if (domain == null)
                 domain = "";
-
-
-
-            
 
             try
             {
